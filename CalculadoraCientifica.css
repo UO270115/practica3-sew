@@ -28,8 +28,6 @@ div{
 
 /*100*/
 #label{
+    position: absolute;
     visibility: hidden;
-    height: 0em;
-    width: 0em;
-    line-height: 0em;
 }
