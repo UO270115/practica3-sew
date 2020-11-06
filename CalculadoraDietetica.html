@@ -13,33 +13,34 @@
         <p>Selecciona y rellena con tus datos: </p>
         <div>
             <label for="sexoMujer">Mujer</label>
-            <input type="radio" id="sexoMujer" name="drone" value="mujer" checked>
+            <input type="radio" id="sexoMujer" name="drone" value="mujer" alt="Radio button a seleccionar si el sexo del usuario es mujer" checked>
         </div>
         <div>
             <label for="sexoHombre">Hombre</label>
-            <input type="radio" id="sexoHombre" name="drone" value="hombre">
+            <input type="radio" id="sexoHombre" name="drone" value="hombre" alt="Radio button a seleccionar si el sexo del usuario es homnre">
         </div>
         <div>
             <label for="altura">Altura(cm):</label>
-            <input type="text" id="altura" value="" >
+            <input type="text" id="altura" alt="Label a completar con la altura del usuario" >
         </div>
         <div>
             <label for="peso">Peso(kg):</label>
-            <input type="text" id="peso" value="" >
+            <input type="text" id="peso" alt="Label a completar con el peso del usuario" >
         </div>
         <div>
             <label for="edad">Edad(años):</label>
-            <input type="text" id="edad" value="">
+            <input type="text" id="edad" alt="Label a completar con la edad del usuario">
         </div>
         <div class="calculadoraDietetica">
-            <input type="button" value="Calcular" id="botonCalcular" onclick="calculadoraDietetica.calcular()" />
+            <input type="button" value="Calcular" id="botonCalcular" onclick="calculadoraDietetica.calcular()"
+            alt="Botón a calcar cuando los datos han sido introducidos y el usuario quiere saber sus resultados para IMC y TBM"/>
         </div>
         <div>
             <label>RESULTADOS</label>
         </div>
         <div>
             <label for="IMC">IMC (Índice de masa corporal):</label>
-            <input type="text" id="IMC" value="" disabled>
+            <input type="text" id="IMC" alt="Label que se completará con el resultado del cálculo IMC del usuario" disabled>
         </div>
         <p>Si su IMC es inferior a 18.5, está dentro de los valores correspondientes a "bajo peso".</p>
         <p>Si su IMC es entre 18.5 y 24.9, está dentro de los valores "normales" o de peso saludable.</p>
@@ -47,7 +48,7 @@
         <p>Si su IMC es 30.0 o superior, está dentro de los valores de "obesidad".</p>
         <div>
             <label for="calorias">Consumo de calorías diarias recomendadas (TBM):</label>
-            <input type="text" id="calorias" value="" disabled>
+            <input type="text" id="calorias" alt="Label que se completará con el resultado del cálculo TBM del usuario" disabled>
         </div>
         <table>
             <tr>
