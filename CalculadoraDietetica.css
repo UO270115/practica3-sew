@@ -1,0 +1,73 @@
+/*0001*/
+body{
+    color:black;
+    background-color:white;
+    line-height: 3em;
+    padding: 3em;
+}
+
+/*0001*/
+h1{
+    color:rgb(190, 52, 52);
+    background-color:white;
+}
+
+/*0001*/
+div{
+    display: grid;
+    color:black;
+    background-color:white;
+    grid-template-columns: 22em 11em;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+/*100*/
+#label{
+    color:black;
+    background-color:white;
+}
+
+/*100*/
+#botonCalcular{
+    background-color: rgb(2, 218, 2);
+    color: white;
+    font-size: 15px;
+    height: 2em;
+    display: block;
+}
+
+/*0001*/
+table{
+    color:#000000;
+    background-color: #acc6d6;
+    border-color: black;
+    border-style: hidden;
+    border-width: 0.1mm;
+}
+
+/*0001*/
+th{
+    text-transform: uppercase;
+    text-align: center;
+    border-style: hidden;
+    border-width: 0.1mm;
+    padding: 10px 10px;
+    color: #000000;
+    background-color: white;
+}
+
+/*0001*/
+td{
+    text-align: center;
+    border-style: hidden;
+    border-width: 0.1mm;
+    padding: 5px 5px;
+    color: #000000;
+    background-color: white;
+}
+
+/*011*/
+input[type = "text"]{
+    text-align: center;
+}
