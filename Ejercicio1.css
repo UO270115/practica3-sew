@@ -1,0 +1,39 @@
+/*0001*/
+body{
+    color:black;
+    background-color:white;
+}
+
+/*0001*/
+h1{
+    text-align:center;
+    color:rgb(190, 52, 52);
+    background-color:white;
+}
+
+/*0001*/
+h2{
+    text-align:center;
+    color:rgb(87, 184, 87);
+    background-color:white;
+}
+
+/*0001*/
+h3{
+    text-align:center;
+    color:rgb(126, 126, 221);
+    background-color:white;
+}
+
+/*0001*/
+h4{
+    text-align:center;
+    color:rgb(197, 167, 85);
+    background-color:white;
+}
+
+/*0001*/
+p{
+    color:black ;
+    background-color:white;
+}

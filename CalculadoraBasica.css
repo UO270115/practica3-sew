@@ -1,0 +1,21 @@
+/*0001*/
+body{
+    color:black;
+    background-color:white;
+    line-height: 15px;
+}
+
+/*0001*/
+h1{
+    text-align:center;
+    color:rgb(190, 52, 52);
+    background-color:white;
+}
+
+/*0001*/
+div{
+    display: grid;
+    grid-template-columns: 2em 2em 2em 2em;
+    column-gap: 1em;
+    row-gap: 1em;
+}

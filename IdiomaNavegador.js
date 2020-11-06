@@ -1,0 +1,1 @@
+document.write("<h2>Idioma: " + infoNavegador.idioma + "</h2>")

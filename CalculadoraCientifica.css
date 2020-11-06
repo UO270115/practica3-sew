@@ -1,0 +1,27 @@
+/*0001*/
+body{
+    color:black;
+    background-color:white;
+    line-height: 15px;
+}
+
+/*0001*/
+h1{
+    text-align:center;
+    color:rgb(190, 52, 52);
+    background-color:white;
+}
+
+/*0001*/
+div{
+    display: grid;
+    grid-template-columns: 5em 5em 5em 5em 5em;
+    column-gap: 2em;
+    row-gap: 2em;
+}
+
+/*100*/
+#resultado{
+    width: 39em;
+    height: 7em;
+}
