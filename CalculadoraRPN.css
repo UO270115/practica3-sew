@@ -25,6 +25,7 @@ div{
     width: 29em;
     height: 7em;
     text-align: end;
+    color:black;
     background-color: rgb(203, 239, 248);
     overflow-y: scroll;
     display: block;
@@ -35,5 +36,6 @@ div{
     width: 34em;
     height: 2em;
     text-align: end;
+    color:black;
     background-color: rgb(203, 239, 248);
 }
