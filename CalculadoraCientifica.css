@@ -25,3 +25,11 @@ div{
     width: 39em;
     height: 7em;
 }
+
+/*100*/
+#label{
+    visibility: hidden;
+    height: 0em;
+    width: 0em;
+    line-height: 0em;
+}

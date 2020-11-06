@@ -19,3 +19,11 @@ div{
     column-gap: 1em;
     row-gap: 1em;
 }
+
+/*100*/
+#label{
+    visibility: hidden;
+    height: 0em;
+    width: 0em;
+    line-height: 0em;
+}
