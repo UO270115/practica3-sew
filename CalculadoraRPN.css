@@ -39,3 +39,9 @@ div{
     color:black;
     background-color: rgb(203, 239, 248);
 }
+
+/*100*/
+#label{
+    position: absolute;
+    visibility: hidden;
+}
