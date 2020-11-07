@@ -41,7 +41,7 @@ class TiempoCiudad {
                 $('#direccionViento td').eq(index).text(datos.wind.deg); 
                 $('#velocidadViento td').eq(index).text(datos.wind.speed); 
                 $('#icono td').eq(index).html('<img src="https://openweathermap.org/img/w/' + datos.weather[0].icon + '.png"' +
-                    'alt="Imagen que representa el tiempo de una ciudad/>');
+                    'alt="Imagen que representa el tiempo de una ciudad"/>');
             },
             error: function(){
                 alert("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
