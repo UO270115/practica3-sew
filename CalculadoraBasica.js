@@ -76,7 +76,8 @@ class CalculadoraBasica{
     punto(){
         this.resultado += ".";
         this.memoria += ".";
-        document.getElementById("resultado").value = this.mostar;
+        this.mostrar += ".";
+        document.getElementById("resultado").value = this.mostrar;
     }
 
     borrar(){
