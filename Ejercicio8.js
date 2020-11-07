@@ -49,8 +49,6 @@ class TiempoCiudad {
     }
 
 }
-$(document).ready(function () {
-    new TiempoCiudad(1, 'Ribadeo');
-    new TiempoCiudad(2, 'San Ciprián');
-    new TiempoCiudad(3, 'Viveiro');    
-});
+var tiempoCiudad1 = new TiempoCiudad(1, 'Ribadeo');
+var tiempoCiudad2 = new TiempoCiudad(2, 'San Ciprián');
+var tiempoCiudad3 = new TiempoCiudad(3, 'Viveiro');    

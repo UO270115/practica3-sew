@@ -45,3 +45,12 @@ td{
     color: rgb(134, 133, 133);
     background-color: white;
 }
+
+/*0100*/
+#button{
+    line-height: 2em;
+    color: black;
+    background-color: lightblue;
+    position: absolute;
+    visibility: hidden;
+}
