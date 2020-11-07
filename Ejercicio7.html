@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <title>La Película The Terminator</title>
+
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+
+    <!-- Metadatos estándares -->
+    <meta name="keywords" content="html5, estándares, caracteres, diseño web" />
+    <meta name="author" content="Andrea García Cernuda, uo270115" />
+    <meta name="description" content="descripción de la película, sinapsis, protagonistas, doblaje" />
+    <meta name=viewport content="width=device-width, initial-scale=1" />
+
+    <!-- hoja de estilo por defecto -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+</head>
+
+<body>
+    <h1>La Película The Terminator</h1>
+    <section>
+        <h2 id="descripcion">Descripción</h2>
+        <p>The Terminator (El Exterminador en español) es una película estadounidense de ciencia ficción y acción de 1984, dirigida por 
+            James Cameron, coescrita entre Cameron, Gale Anne Hurd y William Wisher Jr. y protagonizada por Arnold Schwarzenegger, 
+            Linda Hamilton y Michael Biehn.</p>
+        <p>El filme fue producido por Hemdale Film Corporation y distribuido por Orion Pictures.</p> 
+        <p>La película fue estrenada el 20 de octubre de 1984 y fue un gran éxito de taquilla que dio inicio a una franquicia que consta 
+            de varias secuelas, una serie de televisión, cómics, novelas y videojuegos.</p>
+        <p>En 2008 la Biblioteca del Congreso de los Estados Unidos seleccionó la película para su preservación en el National Film 
+            Registry encontrándola "culturalmente, históricamente, o estéticamente significativa".</p>
+    </section>
+
+    <section>
+        <h2 id="sinapsis">Sinapsis</h2>
+        <p>En el año 2029, después de devastar la Tierra y esclavizar a la humanidad, las máquinas, gobernadas por la inteligencia artificial 
+            conocida como Skynet, están a punto de perder la guerra contra la resistencia humana liderada por John Connor.</p>
+        <p>Frente a esa situación, las máquinas entienden que asesinar a John Connor en el presente sería irrelevante, dado que ya ha conducido 
+            a la resistencia humana a la victoria. Por lo tanto, Skynet elabora su estrategia decidiendo eliminar al líder enemigo antes que 
+            nazca.</p>
+        <p>Para ello envía al año 1984 a un Terminator T-800 modelo Cyberdyne 101, un cíborg exterminador (Arnold Schwarzenegger), a través de 
+            una máquina del tiempo, con la misión de exterminar a Sarah Connor (Linda Hamilton), madre de John, antes que sea concebido.</p>
+        <p>Enterados del plan para asesinar a la mujer que dará a luz al único hombre capaz de salvar a la humanidad, la resistencia también 
+            consigue acceder a la máquina del tiempo y logra enviar a un soldado humano, Kyle Reese (Michael Biehn), con la misión de protegerla 
+            del T-800.</p>
+    </section>
+
+    <section>
+        <h2>Protagonistas</h2>
+        <ul>
+            <li> Arnold Schwarzenegger</li>
+            <li> Linda Hamilton</li>
+            <li>Michael Biehn</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Doblaje</h2>
+        <table id="tabla">
+            <tr id="tr">
+                <th>Personaje</th>
+                <th>Actor original</th>
+                <th>Actor de voz España</th>
+            </tr>
+            <tr>
+                <td>Terminator</td>
+                <td>Arnold Schwarzenegger</td>	    
+                <td>Constantino Romero
+                </td>
+            </tr>
+            <tr>
+                <td>Sarah Connor</td>
+                <td>Linda Hamilton</td>	    
+                <td>María Luisa Solá
+                </td>
+            </tr>
+            <tr>
+                <td>Kyle Reese</td>
+                <td>Michael Biehn</td>	    
+                <td>Manolo García
+                </td>
+            </tr>
+            <tr>
+                <td>Dr. Peter Silberman</td>
+                <td>Earl Boen</td>	    
+                <td>Joaquín Díaz
+                </td>
+            </tr>
+            <tr>
+                <td>Teniente Ed Traxler</td>
+                <td>Paul Windfield</td>	    
+                <td>Pepe Mediavillac</td>
+            </tr>
+            <tr>
+                <td>Detective Vukovich</td>
+                <td>Lance Herinksen</td>	    
+                <td>Miguel Ángel Jenner</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h3 id="botones">Botones</h3>
+        <p></p>
+        <div>
+            <input type="button"  Value="Ocultar los párrafos" onclick="query.ocultar()" />
+            <input type="button"  Value="Mostrar los elementos ocultados" onclick="query.mostrar()" />  
+        </div>
+        <div>
+            <input type="button"  Value="Cambiar contenido encabezamos descripción y sinapsis" onclick="query.cambiar()" />
+            <input type="button"  Value="Volver al contenido original" onclick="query.reset()" />
+        </div>
+        <div>
+            <input type="button"  Value="Añadir nuevos elementos" onclick="query.añadir()" />
+            <input type="button"  Value="Eliminar los nuevos elementos" onclick="query.eliminar()" />
+        </div>
+        <div>
+            <input type="button"  Value="Recorrer HTML y mostrar información pertinente" onclick="query.recorrer()" />
+            <input type="button"  Value="Sumar filas y columnas a la tabla" onclick="query.ampliarTabla()" />
+        </div>
+        <p></p>
+    </section>
+
+    <a href="https://validator.w3.org/check?uri=referer">
+        <img src="HTML5.png" alt=" HTML5 Válido!" /></a>
+
+    <a href=" http://jigsaw.w3.org/css-validator/check/referer">
+        <img src="CSS3.png" alt="CSS Válido!" height="63" width="64"/></a>
+
+    <footer>
+        <p>Copyrigth @2020 Andrea García Cernuda</p>
+    </footer>
+
+</body>
+
+</html>
