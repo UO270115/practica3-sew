@@ -25,3 +25,8 @@ div{
     position: absolute;
     visibility: hidden;
 }
+
+/*0100*/
+#resultado{
+    width: 13em;
+}
