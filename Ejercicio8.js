@@ -20,7 +20,7 @@ class TiempoCiudad {
             method: 'GET',
             success: function(datos){
                 $("pre").text(JSON.stringify(datos, null, 2));
-                alert("¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
+                //alert("¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
                 console.log(datos);
                 $('#ciudad th').eq(index).text(datos.name);
                 $('#pais td').eq(index).text(datos.sys.country);
@@ -44,7 +44,7 @@ class TiempoCiudad {
                     'alt="Imagen que representa el tiempo de una ciudad"/>');
             },
             error: function(){
-                alert("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
+                //alert("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
             }   
         });
     }
