@@ -1,0 +1,57 @@
+/*0001*/
+body {
+    font: 400 1.2em Arial, sans-serif;
+    font-stretch: semi-expanded; 
+    font-style: normal;
+    line-height: 1.5;
+    color: #000000;
+    background-color:#ffffff; 
+}
+
+/*0001*/
+h1 {
+    text-transform: uppercase;
+    text-align: left; 
+    padding: 1em;
+    margin-left: 4em;
+    color: red;
+    background-color:white;    
+}
+
+/*0001*/
+table{
+    margin-left: 7em;
+    margin-bottom: 1em;
+    color:#000000;
+    background-color: lightgrey;
+}
+
+/*0001*/
+th{
+    text-transform: uppercase;
+    text-align: center;
+    border-style: hidden;
+    border-width: 0.1mm;
+    padding: 1em 1em;
+    color: black;
+    background-color: white;
+}
+
+/*0001*/
+td{
+    text-align: center;
+    border-style: hidden;
+    border-width: 0.1mm;
+    padding: 0.5em 0.5em;
+    color: black;
+    background-color: white;
+}
+
+/*0100*/
+#button{
+    line-height: 2em;
+    color: black;
+    background-color: lightblue;
+    position: absolute;
+    visibility: hidden;
+}

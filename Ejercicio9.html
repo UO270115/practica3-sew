@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1" />
+    <title>Ejercicio 9</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio9.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio9.js"></script>
+</head>
+<body>
+    <h1>Información meteorológica</h1>
+    <input type="button" value="Cargar información" id="button" onclick="tiempoCiudad1, tiempoCiudad2, tiempoCiudad3, tiempoCiudad3, tiempoCiudad5" />
+    <table id="table">
+        <tr id="ciudad">
+            <th>Ciudades</th>
+            <th> </th>
+            <th> </th>
+            <th> </th>
+            <th> </th> 
+            <th> </th> 
+        </tr>
+        <tr id="numero">
+            <td>Número elementos XML</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="pais">
+            <td>País</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="latitud">
+            <td>Latitud</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="longitud">
+            <td>Longitud</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="amanece">
+            <td>Amanece</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="anochece">
+            <td>Anochece</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="hora">
+            <td>Hora última medición</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="fecha">
+            <td>Fecha medición</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="temperatura">
+            <td>Temperatura</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="temperaturaMinima">
+            <td>Temperatura mínima</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="temperaturaMaxima">
+            <td>Temperatura máxima</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="unidades">
+            <td>Temperatura unidades</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="presion">
+            <td>Presión</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="humedad">
+            <td>Humedad</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="visibilidad">
+            <td>Visibilidad</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="nubosidad">
+            <td>Nubosidad</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="nombreNubosidad">
+            <td>Nombre nubosidad</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="descripcion">
+            <td>Descripción</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="nombreViento">
+            <td>Nombre del viento</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="direccionViento">
+            <td>Dirección del viento</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="velocidadViento">
+            <td>Velocidad del viento</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="codigoViento">
+            <td>Código del viento</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="precipitacionModo">
+            <td>Modo precipitación</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="icono">
+            <td>Icono</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <a href="https://validator.w3.org/check?uri=referer">
+        <img src="HTML5.png" alt=" HTML5 Válido!" /></a>
+
+    <a href=" http://jigsaw.w3.org/css-validator/check/referer">
+        <img src="CSS3.png" alt="CSS Válido!" height="63" width="64"/></a>
+
+    <footer>
+        <p>Copyrigth @2020 Andrea García Cernuda</p>
+    </footer>
+</body>
+</html>
