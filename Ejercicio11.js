@@ -4,15 +4,25 @@ class Noticias {
        
         var _this = this;
 
-        var url = 'Access-Control-Allow-Origin: http://newsapi.org/v2/top-headlines?' +
-                    'country=us&' +
-                    'apiKey=59b9e814f29d444a9f135bd4af9f296a';
+        var url = 'Access-Control-Allow-Origin: http://newsapi.org/v2/everything?q=Apple&from=2020-11-13&sortBy=popularity&apiKey=59b9e814f29d444a9f135bd4af9f296a';
+        //var url = "Access-Control-Allow-Origin: http://newaspi.org/v2/top-headlines?sources=bbc-news&q=&from=&apiKey=eced2dc2f05c408fbebbf249fb3ef2f4";
+
         var req = new Request(url);
 
-        $.getJSON(req, function (datos) {
-        
-            console.log(datos);
+        /*
+        fetch(req).then(function(response) {
+            console.log(response.json());
+        })*/
 
+        $.getJSON(req).done(function(data){
+                console.log(data);
+            }
+        );
+
+       
+        /*
+        $.getJSON('https://newsapi.org/v2/top-headlines?sources=cnn-es&apiKey=0d00570bc7a0493b9e526c95fc081132', function (datos) {
+        
             datos.articles.forEach(function (articulo) {
 
                 var noticia = $('<article>')
@@ -44,7 +54,7 @@ class Noticias {
 
             });
             
-        });
+        });*/
         
 }
 
