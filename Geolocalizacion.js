@@ -88,12 +88,21 @@ class Geolocalizacion {
     showMap(position){
         var ubicacion = new google.maps.LatLng(position.coords.latitude, position.coords.longitud);
         var mapaGeoposicionado = new google.maps.Map(document.getElementById("ubicacion"),{
-            zoom: 8,
+            zoom: 13,
             center: ubicacion,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         });
         //var mapa = new google.maps.Map(document.getElementById("ubicacion"), mapaGeoposicionado);
         //var marcador = new google.maps.Marker({position: ubicacion, map: mapa}); 
+
+        const trafficLayer = new google.maps.TrafficLayer();
+        trafficLayer.setMap(mapaGeoposicionado);
+
+        //const transitLayer = new google.maps.TransitLayer();
+        //transitLayer.setMap(mapaGeoposicionado);
+
+        //const bikeLayer = new google.maps.BicyclingLayer();
+        //bikeLayer.setMap(mapaGeoposicionado);
 
         var infoWindow = new google.maps.InfoWindow;
         if (navigator.geolocation) {
