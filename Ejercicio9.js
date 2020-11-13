@@ -20,7 +20,7 @@ class TiempoCiudad {
             method: 'GET',
             success: function(datos){
                 $("pre").text((new XMLSerializer()).serializeToString(datos));
-                alert("¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
+                //alert("¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
                 console.log(datos);
 
                 var ciudad = $('city',datos).attr("name");
@@ -98,7 +98,7 @@ class TiempoCiudad {
                     
             },
             error: function(){
-                alert("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
+                //alert("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
             }   
         });
     }
