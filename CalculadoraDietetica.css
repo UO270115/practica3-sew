@@ -13,6 +13,12 @@ h1{
 }
 
 /*0001*/
+h2{
+    color:rgb(52, 54, 190);
+    background-color:white;
+}
+
+/*0001*/
 div{
     display: grid;
     color:black;

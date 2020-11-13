@@ -11,7 +11,7 @@
     <section>
         <h1>Calculadora Dietetica</h1>
         <p>Selecciona y rellena con tus datos: </p>
-        <form>
+        <fieldset>
             <div>
                 <label for="sexoMujer">Mujer</label>
                 <input type="radio" id="sexoMujer" name="drone" value="mujer" title="Radio button a seleccionar si el sexo del usuario es mujer" checked>
@@ -20,7 +20,7 @@
                 <label for="sexoHombre">Hombre</label>
                 <input type="radio" id="sexoHombre" name="drone" value="hombre" title="Radio button a seleccionar si el sexo del usuario es hombre">
             </div>
-        </form>
+        </fieldset>
         <div>
             <label for="altura">Altura(cm):</label>
             <input type="text" id="altura" value="" title="Label a completar con la altura del usuario" >
@@ -37,9 +37,7 @@
             <input type="button" value="Calcular" id="botonCalcular" onclick="calculadoraDietetica.calcular()"
             title="Botón a calcar cuando los datos han sido introducidos y el usuario quiere saber sus resultados para IMC y TBM"/>
         </div>
-        <div>
-            <label>RESULTADOS</label>
-        </div>
+        <h2>Resultados</h2>
         <div>
             <label for="IMC">IMC (Índice de masa corporal):</label>
             <input type="text" id="IMC" value="" title="Label que se completará con el resultado del cálculo IMC del usuario" disabled>
