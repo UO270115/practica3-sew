@@ -24,3 +24,8 @@ h1 {
     color: black;
     background-color: rgb(233, 122, 88);
 }
+
+/*0100*/
+#ubicacion{
+    padding-bottom: 1.5em;
+}
