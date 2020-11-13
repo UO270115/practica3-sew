@@ -1,0 +1,14 @@
+body {
+    font: 400 15px Tahoma; 
+    line-height: 1.8;
+    color: #818181;
+    }
+ h1 {
+    color:rgb(17, 17, 158);
+    text-transform: uppercase;
+    padding: 50px 25px;
+    text-align: center;
+    }
+h2{
+    color:black;
+}
