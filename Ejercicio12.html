@@ -11,8 +11,8 @@
 <body>
     <h1>Visualizador de archivos y sus propiedades</h1>
 
-    <!-- <label for="archivos">Seleccione uno o varios archivos:</label> -->
     <p>Seleccione uno o varios archivos:</p>
+    <label for="archivos" id="label">Seleccione uno o varios archivos:</label>
     <input type="file" id="archivos" name="archivos" onchange="reader.leerArchivos();" multiple>
 
     <div id="content"></div>

@@ -22,3 +22,9 @@ h1 {
 #archivos{
     padding-bottom: 1.5em;
 }
+
+/*100*/
+#label{
+    position: absolute;
+    visibility: hidden;
+}
