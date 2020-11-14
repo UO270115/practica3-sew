@@ -42,5 +42,5 @@ class Noticias {
 $(document).ready(function () {
     //Cada 60 segundos (60000 milisegundos) se ejecutará la función refrescar
     var noticias = new Noticias();
-    setTimeout(noticias.actualizar, 60000);
+    //setTimeout(noticias.actualizar, 60000);
 });
