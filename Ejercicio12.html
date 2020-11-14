@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1" />
+    <title>Ejercicio12</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio12.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio12.js"></script>
+</head>
+<body>
+    <h1>Visualizador de archivos y sus propiedades</h1>
+
+    <!-- <label for="archivos">Seleccione uno o varios archivos:</label> -->
+    <p>Seleccione uno o varios archivos:</p>
+    <input type="file" id="archivos" name="archivos" onchange="reader.leerArchivos();" multiple>
+
+    <div id="content"></div>
+
+    <a href="https://validator.w3.org/check?uri=referer">
+        <img src="HTML5.png" alt=" HTML5 Válido!" /></a>
+
+    <a href=" http://jigsaw.w3.org/css-validator/check/referer">
+        <img src="CSS3.png" alt="CSS Válido!" height="63" width="64"/></a>
+</body>
+</html>
