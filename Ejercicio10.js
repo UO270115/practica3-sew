@@ -28,7 +28,7 @@ class Noticias {
                     noticia += "<img src='" + articulo.image + "' alt='Foto representativa de la noticia' height='500' width='100%'/>";
                     noticia += "<p>Fuente de información: " + articulo.source.name + "</p>";
                     noticia += "<p>Fecha de la punlicación: " + articulo.publishedAt + "</p>";
-                    noticia += "<a>href='" + articulo.url + "'>Ver la noticia completa</a>";
+                    noticia += "<a href='" + articulo.url + "'>Ver la noticia completa</a>";
                     noticia += "</article>";
                     $(noticia).appendTo("#noticias");
                 });
