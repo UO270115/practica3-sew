@@ -1,0 +1,186 @@
+{
+    "type": "FeatureCollection",
+    "name": "mapaRutasEnAvion",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.532777777777778,43.54527777777778]
+            },
+            "properties": {
+                "name": "Puerto de Luarca, Paseo del Muelle, Asturias, España",
+                "description": "Punto de inicio"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.7625,43.761944444444445]
+            },
+            "properties": {
+                "name": "Paralelo a Ribadeo",
+                "description": "Punto intermedio 1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-7.419764,43.727056]
+            },
+            "properties": {
+                "name": "Paralelo a San Ciprián",
+                "description": "Punto intermedio 2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-7.592777777777777,43.676944444444445]
+            },
+            "properties": {
+                "name": "Viveiro",
+                "description": "Punto final"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ruta desde Luarca a Viveiro",
+                "description": "Ruta en avión número 1"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-6.532777777777778,43.54527777777778],
+                    [-6.7625,43.761944444444445],
+                    [-7.419764,43.727056],
+                    [-7.592777777777777,43.676944444444445]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.254444444444444,43.14416666666666]
+            },
+            "properties": {
+                "name": "Carretera AS-117, en la parada de bus La Pontonciella (Línea 3: Oviedo - Pola de Laviana - La Foz por Anieves), Parque Natural de Redes, Caso, Asturias, España",
+                "description": "Punto de inicio"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-4.659166666666667,43.35861111111111]
+            },
+            "properties": {
+                "name": "Bordeo a la Sierra del Cuera",
+                "description": "Punto intermedio 1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.597940,43.548057]
+            },
+            "properties": {
+                "name": "Playa Estaño de Gijón",
+                "description": "Punto intermedio 2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.831488,43.436376]
+            },
+            "properties": {
+                "name": "Aeródromo de la Morgal",
+                "description": "Punto final"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Paseo por Asturias",
+                "description": "Ruta en avión número 2"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-5.254444444444444,43.14416666666666],
+                    [-4.659166666666667,43.35861111111111],
+                    [-5.597940,43.548057],
+                    [-5.831488,43.436376]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.033266,43.558859]
+            },
+            "properties": {
+                "name": "Aeropuerto de Ranón, Asturias, España",
+                "description": "Punto de inicio"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-4.5922222222222215,45.675482]
+            },
+            "properties": {
+                "name": "Mitad del golfo de Vizcaya",
+                "description": "Punto intermedio 1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-3.130770,47.755160]
+            },
+            "properties": {
+                "name": "Landévant, Loriert, Moribhan, Brittany, Francia",
+                "description": "Punto intermedio 2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.248923,51.879883]
+            },
+            "properties": {
+                "name": "Aeropuerto Stanstede, Essex, Inglaterra, Reino Unido",
+                "description": "Punto final"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Paseo por Asturias",
+                "description": "Ruta en avión número 2"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-6.033266,43.558859],
+                    [-4.5922222222222215,45.675482],
+                    [-3.130770,47.755160],
+                    [0.248923,51.879883]
+                ]
+            }
+        }
+    ]
+}
