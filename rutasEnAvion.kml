@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+<Document>
+<Placemark>
+<name>Ruta desde Luarca a Viveiro</name>
+<description>Punto de inicio</description>
+<Point>
+<coordinates>
+-6.532777777777778,43.54527777777778,5
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<LineString>
+<coordinates>
+-6.532777777777778,43.54527777777778,5
+-6.7625,43.761944444444445,25
+-7.419764,43.727056,20
+-7.592777777777777,43.676944444444445,7
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>Paralelo a Ribadeo</name>
+<Point>
+<coordinates>
+-6.7625,43.761944444444445,25
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Paralelo a San Ciprián</name>
+<Point>
+<coordinates>
+-7.419764,43.727056,20
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Viveiro</name>
+<Point>
+<coordinates>
+-7.592777777777777,43.676944444444445,7
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Paseo por Asturias</name>
+<description>Punto de inicio</description>
+<Point>
+<coordinates>
+-5.254444444444444,43.14416666666666,300
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<LineString>
+<coordinates>
+-5.254444444444444,43.14416666666666,300
+-4.659166666666667,43.35861111111111,664
+-5.597940,43.548057,520
+-5.831488,43.436376,7
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>Bordeo a la Sierra del Cuera</name>
+<Point>
+<coordinates>
+-4.659166666666667,43.35861111111111,664
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Playa Estaño de Gijón</name>
+<Point>
+<coordinates>
+-5.597940,43.548057,520
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Aeródromo de la Morgal</name>
+<Point>
+<coordinates>
+-5.831488,43.436376,7
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Viaje de Asturias a Londres</name>
+<description>Punto de inicio</description>
+<Point>
+<coordinates>
+-6.033266,43.558859,126
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<LineString>
+<coordinates>
+-6.033266,43.558859,126
+-4.5922222222222215,45.675482,1500
+-3.130770,47.755160,1000
+0.248923,51.879883,106
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>Mitad del golfo de Vizcaya</name>
+<Point>
+<coordinates>
+-4.5922222222222215,45.675482,1500
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Landévant, Loriert, Moribhan, Brittany, Francia</name>
+<Point>
+<coordinates>
+-3.130770,47.755160,1000
+</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Aeropuerto Stanstede, Essex, Inglaterra, Reino Unido</name>
+<Point>
+<coordinates>
+0.248923,51.879883,106
+</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
