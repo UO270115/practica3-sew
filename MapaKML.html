@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1" />
+    <title>Ejercicio13 Tarea1</title>
+    <link rel="stylesheet" type="text/css" href="MapaKML.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Sya6vv6zP0gDYt9VSen6lsVnBYIJ7gA"></script>
+    <script src="MapaKML.js"></script>
+</head>
+<body>
+    <h1>Visualizador de KML con API Google Maps</h1>
+
+    <label for="archivo" id="label">Seleccione un archivo:</label>
+    <input type="file" id="archivo" name="archivo" onchange="mapa.leerArchivo();">
+
+    <div id="map"></div>
+    <div id="capture"></div>
+
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img src="HTML5.png" alt=" HTML5 Válido!" /></a>
+    
+        <a href=" http://jigsaw.w3.org/css-validator/check/referer">
+            <img src="CSS3.png" alt="CSS Válido!" height="63" width="64"/></a>
+    </footer>
+    
+</body>
+</html>
