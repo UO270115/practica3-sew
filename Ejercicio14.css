@@ -1,6 +1,6 @@
 /*0001*/
 body{
-    font: 400 1.2em Arial, sans-serif;
+    font: 400 1.5em Arial, sans-serif;
     font-stretch: semi-expanded; 
     font-style: normal;
     line-height: 1.5;
@@ -24,13 +24,8 @@ h1{
     margin: 0.5em;
 }
 
-/*0100*/
-#pantalla{
-    width: 3.5em;
-}
-
-/*0011*/
-input[type="label"]{
+/*001*/
+label{
     position: absolute;
     visibility: hidden;
 }
@@ -38,23 +33,24 @@ input[type="label"]{
 /*0011*/
 input[type="button"]{
     margin: 1em;
-    height: 30px;
+    height: 40px;
+    padding: 0.5em;
+    color: white;
+    background-color:cadetblue; 
 }
 
 /*0100*/
 #pantalla{
     background-image: url("fullScreen.png");
+    color: black;
+    background-color:cadetblue; 
 }
 
 /*0100*/
 #highlight{
-    background-image: url("noFullScreen.png");
-}
-
-/*0100*/
-#black{
-    color: white;
-    background-color:black; 
+    background-image: url("highlight.png");
+    color: black;
+    background-color:cadetblue; 
 }
 
 /*0100*/
