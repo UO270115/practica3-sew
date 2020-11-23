@@ -115,7 +115,8 @@ class Canvas {
             } else if (document.documentElement.webkitRequestFullScreen) {  
                 document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
             }  
-            $("#pantalla").attr("src","noFullScreen.png");
+            //$("#pantalla").attr("src","noFullScreen.png");
+            $("#pantalla").css("background-image", "url(" + noFullScreen.png + ")");
         } else {  
             if (document.cancelFullScreen) {  
                 document.cancelFullScreen();  
@@ -124,7 +125,8 @@ class Canvas {
             } else if (document.webkitCancelFullScreen) {  
                 document.webkitCancelFullScreen();  
             }  
-            $("#pantalla").attr("src","fullScreen.png");
+            //$("#pantalla").attr("src","fullScreen.png");
+            $("#pantalla").css("background-image", "url(" + fullScreen.png + ")");
         }  
     }
 

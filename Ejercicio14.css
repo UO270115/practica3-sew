@@ -42,6 +42,16 @@ input[type="button"]{
 }
 
 /*0100*/
+#pantalla{
+    background-image: url("fullScreen.png");
+}
+
+/*0100*/
+#highlight{
+    background-image: url("noFullScreen.png");
+}
+
+/*0100*/
 #black{
     color: white;
     background-color:black; 
