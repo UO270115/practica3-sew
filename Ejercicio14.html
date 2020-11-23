@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1" />
+    <title>Ejercicio13 Tarea1</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio14.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio14.js"></script>
+</head>
+<body>
+    <h1>Editor y visualizador de archivos</h1>
+        
+    <label for="archivo" id="label">Seleccione un archivo:</label>
+    <input type="file" id="archivo" name="archivo" onchange="canvas.leerArchivo();">
+
+    <p>Contenido del archivo seleccionado:</p>
+
+    <div id="block">
+        <label for="pantalla" id="labelImage"></label>
+        <input type="image" id="pantalla" src="fullScreen.png" alt="Hacer click para acceder a la pantalla completa" onclick="canvas.pantalla();">
+
+        <label for="guardar" id="labelGuardar"></label>
+        <input type="button" id="guardar" value="Guardar contenido" onclick="canvas.guardar();">
+
+        <label for="hightlight" id="labelHighlight"></label>
+        <input type="image" id="highlight" src="highlight.png" alt="Hacer click para acceder al subrayador" onclick="canvas.highlight();">
+
+        <label for="black" id="labelBlack"></label>
+        <input type="button" id="black" name="#000000" onclick="canvas.color('#000000');">
+
+        <label for="grey" id="labelGrey"></label>
+        <input type="button" id="grey" value="Gris" name="#9b9b9b" onclick="canvas.color('#9b9b9b');">
+
+        <label for="brown" id="labelMarron"></label>
+        <input type="button" id="brown" value="Marrón" name="#804000" onclick="canvas.color('#804000');">
+
+        <label for="red" id="labelRed"></label>
+        <input type="button" id="red" value="Rojo" name="#FF0000" onclick="canvas.color('#FF0000');">
+
+        <label for="orange" id="labelOrange"></label>
+        <input type="button" id="orange" value="Naranja" name="#FF8000" onclick="canvas.color('#FF8000');">
+
+        <label for="green" id="labelGreen"></label>
+        <input type="button" id="green" value="Verde" name="#008f39" onclick="canvas.color('#008f39');">
+
+        <label for="blue" id="labelBlue"></label>
+        <input type="button" id="blue" value="Blue" name="#0000FF" onclick="canvas.color('#0000FF');">
+
+        <label for="purple" id="labelPurple"></label>
+        <input type="button" id="purple" value="Morado" name="#8c004b" onclick="canvas.color('#8c004b');">
+
+        <label for="pink" id="labelPink"></label>
+        <input type="button" id="pink" value="Rosa" name="#ff0080" onclick="canvas.color('#ff0080');">
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img src="HTML5.png" alt=" HTML5 Válido!" /></a>
+        
+        <a href=" http://jigsaw.w3.org/css-validator/check/referer">
+            <img src="CSS3.png" alt="CSS Válido!" height="63" width="64"/></a>
+    </footer>
+</body>
+</html>

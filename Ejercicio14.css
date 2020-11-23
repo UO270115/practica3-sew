@@ -1,0 +1,50 @@
+/*0001*/
+body{
+    font: 400 1.2em Arial, sans-serif;
+    font-stretch: semi-expanded; 
+    font-style: normal;
+    line-height: 1.5;
+    color: #000000;
+    background-color:#ffffff; 
+}
+
+/*0001*/
+h1{
+    text-transform: uppercase;
+    text-align: left; 
+    padding: 0.5em;
+    margin-left: 4em;
+    color: rgb(0, 26, 255);
+    background-color:white; 
+}
+
+/*0100*/
+#block{
+    display: flex;
+    margin: 0.5em;
+}
+
+/*0100*/
+#pantalla{
+    width: 3.5em;
+}
+
+/*0011*/
+input[type="label"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+/*0011*/
+input[type="button"]{
+    margin: 1em;
+    height: 30px;
+}
+
+/*0100*/
+#canvas{
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 10px 60px #888888;
+    padding-bottom: 1.5em;
+}
