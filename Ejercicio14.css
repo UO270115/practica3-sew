@@ -35,22 +35,18 @@ input[type="button"]{
     margin: 1em;
     height: 40px;
     padding: 0.5em;
-    color: white;
+    color: black;
     background-color:cadetblue; 
 }
 
 /*0100*/
 #pantalla{
     background-image: url("fullScreen.png");
-    color: black;
-    background-color:cadetblue; 
 }
 
 /*0100*/
 #highlight{
     background-image: url("highlight.png");
-    color: black;
-    background-color:cadetblue; 
 }
 
 /*0100*/
