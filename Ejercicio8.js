@@ -8,9 +8,9 @@ class TiempoCiudad {
         this.codigoPais = "ES";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
-        //this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apiKey;
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apiKey;
 
-        this.url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=59b9e814f29d444a9f135bd4af9f296a";
+        //this.url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=59b9e814f29d444a9f135bd4af9f296a";
         this.cargarDatos(this.index);
     }
 
