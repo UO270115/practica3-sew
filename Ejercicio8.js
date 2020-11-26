@@ -10,7 +10,7 @@ class TiempoCiudad {
         this.idioma = "&lang=es";
         //this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apiKey;
 
-        this.url = "http://newsapi.org/v2/top-headlines?country=us&apiKey=59b9e814f29d444a9f135bd4af9f296a";
+        this.url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=59b9e814f29d444a9f135bd4af9f296a";
         this.cargarDatos(this.index);
     }
 
@@ -21,7 +21,7 @@ class TiempoCiudad {
             method: 'GET',
             success: function(datos){
                 $("pre").text(JSON.stringify(datos, null, 2));
-                alert("¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
+                alert("¡Todo correcto! JSON recibido de <a href='https://openweathermap.org'>OpenWeatherMap</a>");
                 console.log(datos);
                 $('#ciudad th').eq(index).text(datos.name);
                 $('#pais td').eq(index).text(datos.sys.country);
@@ -45,7 +45,7 @@ class TiempoCiudad {
                     'alt="Imagen que representa el tiempo de una ciudad"/>');
             },
             error: function(){
-                alert("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
+                alert("¡Tenemos problemas! No puedo obtener JSON de <a href='https://openweathermap.org'>OpenWeatherMap</a>");
             }   
         });
     }
