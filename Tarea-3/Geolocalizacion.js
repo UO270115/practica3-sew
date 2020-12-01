@@ -2,7 +2,7 @@
 class Geolocalizacion {
 
     constructor (){
-        //navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this), this.showErrors.bind(this));
+        navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this), this.showErrors.bind(this));
     }
 
     getPosicion(posicion){
