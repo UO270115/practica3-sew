@@ -2,6 +2,7 @@
 class Canvas {
 
     constructor() {
+        // API File de HTML5
         if (!(window.File && window.FileReader && window.FileList && window.Blob)) {  
             alert("<p>¡¡¡ Este navegador NO soporta el API File y este programa puede no funcionar correctamente !!!</p>");
         }
@@ -12,23 +13,13 @@ class Canvas {
     }
 
     inicializar(){
-        $(":button").each(function () {
-            var color = this.name;
-            if(color != undefined){
-                $(this).css({backgroundColor: color});
-            }
-        });
-
         var qCanvas = $('#canvas').mousemove(this.iniciarDibujado.bind(this)).mouseup(this.finalizarDibujado.bind(this));
         this.canvas = qCanvas.get(0);
         this.canvas.width = qCanvas.width();
-        this.canvas.height = 550;
         this.context = this.canvas.getContext("2d");
     }
 
     leerArchivo() {
-        this.canvas.height = 550; // cuando se cambia el tamaño se vacía/se pierde el contenido
-
         var files = document.getElementById("archivo").files;
         var nArchivos = files.length;
         if(nArchivos > 1){
@@ -106,6 +97,7 @@ class Canvas {
         this.y = 0;
     }
 
+    // API FullScreen de HTML5
     pantalla(){
         if ((document.fullScreenElement && document.fullScreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) {
             if (document.documentElement.requestFullScreen) {  
@@ -115,8 +107,7 @@ class Canvas {
             } else if (document.documentElement.webkitRequestFullScreen) {  
                 document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
             }  
-            //$("#pantalla").attr("src","noFullScreen.png");
-            $("#pantalla").css("background-image", 'url("noFullScreen.png")');
+            document.getElementById("pantalla").value = "Pantalla no completa";
         } else {  
             if (document.cancelFullScreen) {  
                 document.cancelFullScreen();  
@@ -125,8 +116,7 @@ class Canvas {
             } else if (document.webkitCancelFullScreen) {  
                 document.webkitCancelFullScreen();  
             }  
-            //$("#pantalla").attr("src","fullScreen.png");
-            $("#pantalla").css("background-image", 'url("fullScreen.png")');
+            document.getElementById("pantalla").value = "Pantalla completa";
         }  
     }
 
@@ -152,7 +142,6 @@ class Canvas {
 
     color(color){
         this.context.strokeStyle = color;
-        //this.context.globalAlpha = 0.3;
         this.context.lineWidth = 2;
     }
 }
