@@ -27,15 +27,14 @@ class Query {
     }
 
     añadir(){
-        $("#botones").before("<section><h2 id='peliculas'>Películas</h2><ul id='listaPeliculas'> " 
+        $("#section").before("<div id='peliculas'><h2>Películas</h2><ul'> " 
             + "<li>The Terminator (1984)</li><li>Terminator 2: El juicio final (1991)</li>"
             + "<li>Terminator 3: La rebelión de las máquina (2003)</li><li lang='en'>Terminator Salvation (2009)</li>"
-            + "<li>Terminator Génesis (2015)</li><li>Terminator: Destino Oscuro (2019)</li></ul></section>");
+            + "<li>Terminator Génesis (2015)</li><li>Terminator: Destino Oscuro (2019)</li></ul></div>");
     }
 
     eliminar(){
         $("#peliculas").remove();
-        $("#listaPeliculas").remove();
     }
 
     // recorrer todos los elementos HTML y mostrar de cada uno de ellos:
@@ -46,7 +45,7 @@ class Query {
             var padre = $(this).parent().get(0);
             this.result = "<p id='recorrer" + counter + "'>Elemento padre: " + padre.tagName + " tipo: " + $(this).get(0).tagName + "</p>";
             if(counter == 0){
-                $("#botones").before("<h2 id='tarea5'>Tarea5</h2>");
+                $("#section").before("<section><h2 id='tarea5'>Tarea5</h2>");
                 $("#tarea5").after(this.result);
             }else{
                  var aux = counter - 1;
@@ -54,6 +53,7 @@ class Query {
             }
             counter++;
         });
+        $("#tarea5").after("</section>");
     }
 
     ampliarTabla(){

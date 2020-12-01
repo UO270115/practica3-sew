@@ -87,8 +87,8 @@ input[type = "button"]{
     background-color: lightblue;
 }
 
-/*0001*/
-div{
+/*0101*/
+#section > div{
     display: grid;
     grid-template-columns: 23em 23em;
     column-gap: 1em;

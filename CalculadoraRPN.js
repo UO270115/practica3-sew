@@ -21,7 +21,6 @@ class CalculadoraRPN{
 
     constructor(){
         this.pila = new Pila();
-        this.puntoCalcado = false;
     }
 
     dividir(){
@@ -33,13 +32,7 @@ class CalculadoraRPN{
     }
 
     digitos(digito){
-        if(this.puntoCalcado){
-            document.getElementById("resultado").value += digito;
-            this.pila.pop();
-        }else{
-            this.pila.push(digito);
-            document.getElementById("resultado").value = digito;
-        }
+        document.getElementById("resultado").value += digito;
     }
 
     multiplicación(){
@@ -67,7 +60,6 @@ class CalculadoraRPN{
     }
 
     punto(){
-        this.puntoCalcado = true;
         document.getElementById("resultado").value += ".";
     }
 
@@ -85,11 +77,9 @@ class CalculadoraRPN{
     }
 
     enter(){
-        if(this.puntoCalcado){
-            this.puntoCalcado = false;
-            this.pila.push(document.getElementById("resultado").value);
-        }
+        this.pila.push(parseFloat(document.getElementById("resultado").value));
         this.pila.show();
+        document.getElementById("resultado").value = "";
     }
 
     módulo(){

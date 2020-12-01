@@ -25,7 +25,7 @@ class CalculadoraBasica{
     // m+ te suma ""
     mMenos(){
         try { 
-            this.memoria -= parseInt(document.getElementById("resultado").value);
+            this.memoria -= parseFloat(document.getElementById("resultado").value);
             this.resultado = this.memoria;
             this.mostrar = this.resultado;
         }
@@ -36,7 +36,7 @@ class CalculadoraBasica{
 
     mMas(){
         try { 
-            this.memoria += parseInt(document.getElementById("resultado").value);
+            this.memoria += parseFloat(document.getElementById("resultado").value);
             this.resultado = this.memoria;
             this.mostrar = this.resultado;
         }
@@ -196,7 +196,7 @@ class CalculadoraCientifica extends CalculadoraBasica{
             }else if ((this.pa & !this.pc) | (this.pc & !this.pa)){
                 document.getElementById("resultado").value = "Error: los paréntesis no están colocados correctamente";
             }else{
-                if(!Number.isNaN(parseInt(this.resultado.charAt(counter)))){
+                if(!Number.isNaN(parseFloat(this.resultado.charAt(counter)))){
                     if(counter >= 0){
                         counter--;
                     }
@@ -240,7 +240,6 @@ class CalculadoraCientifica extends CalculadoraBasica{
     digitos(digito){
         if(this.elevarY){
             this.resultado += ",";
-            this.mostrar += ",";
             document.getElementById("resultado").value = this.mostrar;
         }
         super.digitos(digito);

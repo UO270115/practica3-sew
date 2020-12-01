@@ -2,10 +2,6 @@
 class Noticias {
 
     constructor() {
-       // this.actualizar();
-    //}
-
-    //actualizar(){
         var fechaHoy = new Date;
         var week = fechaHoy.getDate() - 7;
         var fechaHaceUnaSemana = new Date(fechaHoy.setDate(week)).toLocaleDateString("es-ES");
@@ -34,7 +30,7 @@ class Noticias {
                 });
             },
             error: function(){
-                //alert("¡Tenemos problemas al cargar las noticias!</a>");
+                alert("¡Tenemos problemas al cargar las noticias!</a>");
             }   
         });
     }
@@ -43,5 +39,5 @@ $(document).ready(function () {
     //Cada 60 segundos (60000 milisegundos) se ejecutará la función refrescar
     //var noticias = new Noticias();
     new Noticias();
-    //setTimeout(noticias.actualizar, 60000);
+    //setTimeout(noticias.actualizar(), 60000);
 });
